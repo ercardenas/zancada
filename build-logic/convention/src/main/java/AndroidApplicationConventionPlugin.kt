@@ -1,4 +1,6 @@
 import com.android.build.api.dsl.ApplicationExtension
+import com.zancada.convention.ExtensionType
+import com.zancada.convention.configureBuildTypes
 import com.zancada.convention.configureKotlinAndroid
 import com.zancada.convention.libs
 import org.gradle.api.Plugin
@@ -24,6 +26,10 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 }
 
                 configureKotlinAndroid(this)
+                configureBuildTypes(
+                    commonExtension = this,
+                    extensionType =  ExtensionType.APPLICATION
+                )
             }
         }
     }

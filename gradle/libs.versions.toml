@@ -118,3 +118,4 @@ mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.
 room = { id = "androidx.room", version.ref = "room" }
 
 zancada-android-application = { id = "zancada.android.application", version = "unspecified" }
+zancada-android-application-compose = { id = "zancada.android.application.compose", version = "unspecified" }

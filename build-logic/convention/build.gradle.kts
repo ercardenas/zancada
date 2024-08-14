@@ -33,5 +33,10 @@ gradlePlugin {
             id = "zancada.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
+
+        register("androidFeatureUi") {
+            id = "zancada.android.feature.ui"
+            implementationClass = "AndroidFeatureUiConventionPlugin"
+        }
     }
 }

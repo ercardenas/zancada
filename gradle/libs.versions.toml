@@ -120,3 +120,4 @@ room = { id = "androidx.room", version.ref = "room" }
 zancada-android-application = { id = "zancada.android.application", version = "unspecified" }
 zancada-android-application-compose = { id = "zancada.android.application.compose", version = "unspecified" }
 zancada-android-library = { id = "zancada.android.library", version = "unspecified" }
+zancada-android-library-compose = { id = "zancada.android.library.compose", version = "unspecified" }

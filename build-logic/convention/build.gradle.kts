@@ -28,5 +28,10 @@ gradlePlugin {
             id = "zancada.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+
+        register("androidLibraryCompose") {
+            id = "zancada.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
     }
 }

@@ -122,6 +122,7 @@ zancada-android-application-compose = { id = "zancada.android.application.compos
 zancada-android-library = { id = "zancada.android.library", version = "unspecified" }
 zancada-android-library-compose = { id = "zancada.android.library.compose", version = "unspecified" }
 zancada-android-feature-ui = { id = "zancada.android.feature.ui", version = "unspecified" }
+zancada-android-room = { id = "zancada.android.room", version = "unspecified" }
 
 [bundles]
 compose = [

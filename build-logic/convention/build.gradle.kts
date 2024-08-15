@@ -38,5 +38,10 @@ gradlePlugin {
             id = "zancada.android.feature.ui"
             implementationClass = "AndroidFeatureUiConventionPlugin"
         }
+
+        register("androidRoom") {
+            id = "zancada.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
     }
 }

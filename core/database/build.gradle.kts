@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.zancada.android.library)
+//    alias(libs.plugins.zancada.android.room)
 }
 
 android {

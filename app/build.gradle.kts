@@ -27,6 +27,26 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    flavorDimensions += "version"
+
+    productFlavors {
+        create("dev") {
+            minSdk = 25
+            // The following configuration limits the "dev" flavor to using
+            // English stringresources and xxhdpi screen-density resources.
+            resourceConfigurations += listOf("en", "xxhdpi")
+            dimension = "version"
+            applicationIdSuffix = ".dev"
+            versionNameSuffix = "-dev"
+        }
+        create("prod") {
+            minSdk = 25
+            dimension = "version"
+            applicationIdSuffix = ".prod"
+            versionNameSuffix = "-prod"
+        }
+    }
 }
 
 dependencies {

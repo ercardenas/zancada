@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.zancada.android.application.compose)
+    alias(libs.plugins.zancada.jvm.ktor)
     alias(libs.plugins.mapsplatform.secrets.plugin)
 }
 

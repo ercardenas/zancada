@@ -90,7 +90,6 @@ ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negoti
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientLogging" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
-ktor-server-call-logging = { module = "io.ktor:ktor-server-call-logging", version.ref = "ktorServerCallLogging" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 org-mongodb-bson = { module = "org.mongodb:bson", version.ref = "bson" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
@@ -124,6 +123,7 @@ zancada-android-library-compose = { id = "zancada.android.library.compose", vers
 zancada-android-feature-ui = { id = "zancada.android.feature.ui", version = "unspecified" }
 zancada-android-room = { id = "zancada.android.room", version = "unspecified" }
 zancada-jvm-library = { id = "zancada.jvm.library", version = "unspecified" }
+zancada-jvm-ktor= { id = "zancada.jvm.ktor", version = "unspecified" }
 
 [bundles]
 compose = [
@@ -141,3 +141,11 @@ compose-debug = [
 ]
 koin = ["koin-core", "koin-android", "koin-android-workmanager"]
 koin-compose = ["koin-core", "koin-android", "koin-android-workmanager", "koin-androidx-compose"]
+ktor = [
+    "ktor-client-core",
+    "ktor-client-cio",
+    "ktor-client-auth",
+    "ktor-client-content-negotiation",
+    "ktor-serialization-kotlinx-json",
+    "ktor-client-logging"
+]

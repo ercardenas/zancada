@@ -48,5 +48,10 @@ gradlePlugin {
             id = "zancada.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
+
+        register("jvmKtor") {
+            id = "zancada.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
     }
 }

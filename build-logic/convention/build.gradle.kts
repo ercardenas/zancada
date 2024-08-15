@@ -43,5 +43,10 @@ gradlePlugin {
             id = "zancada.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
+
+        register("jvmLibrary") {
+            id = "zancada.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }

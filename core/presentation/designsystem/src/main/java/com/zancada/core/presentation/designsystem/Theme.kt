@@ -19,6 +19,7 @@ val DarkColorScheme = darkColorScheme(
     onBackground = ZancadaWhite,
     onSurface = ZancadaWhite,
     onSurfaceVariant = ZancadaGray,
+    error = ZancadaDarkRed,
 )
 
 @Composable

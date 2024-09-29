@@ -3,6 +3,7 @@ package com.zancada
 import android.app.Application
 import com.zancada.auth.data.di.authDataModule
 import com.zancada.auth.presentation.di.authViewModelModule
+import com.zancada.core.data.di.coreDataModule
 import com.zancada.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -22,7 +23,8 @@ class ZancadaApp : Application() {
             modules(
                 appModule,
                 authDataModule,
-                authViewModelModule
+                authViewModelModule,
+                coreDataModule
             )
         }
     }

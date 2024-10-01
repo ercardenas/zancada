@@ -39,7 +39,6 @@ import com.zancada.core.presentation.designsystem.CrossIcon
 import com.zancada.core.presentation.designsystem.EmailIcon
 import com.zancada.core.presentation.designsystem.Poppins
 import com.zancada.core.presentation.designsystem.ZancadaDarkRed
-import com.zancada.core.presentation.designsystem.ZancadaGray
 import com.zancada.core.presentation.designsystem.ZancadaGreen
 import com.zancada.core.presentation.designsystem.ZancadaTheme
 import com.zancada.core.presentation.designsystem.components.GradientBackground
@@ -107,7 +106,7 @@ private fun RegisterScreen(
                 withStyle(
                     style = SpanStyle(
                         fontFamily = Poppins,
-                        color = ZancadaGray
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 ) {
                     append(stringResource(id = R.string.already_have_an_account) + " ")

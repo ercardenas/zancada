@@ -20,11 +20,12 @@ fun NavigationRoot(
         navController = navController,
         startDestination = "AUTH"
     ) {
-        authGrah(navController)
+        authGraph(navController)
+        runGraph(navController)
     }
 }
 
-private fun NavGraphBuilder.authGrah(navController: NavController) {
+private fun NavGraphBuilder.authGraph(navController: NavController) {
     navigation(
         startDestination = "intro",
         route = "auth"
@@ -74,6 +75,17 @@ private fun NavGraphBuilder.authGrah(navController: NavController) {
                     }
                 }
             )
+        }
+    }
+}
+
+private fun NavGraphBuilder.runGraph(navController: NavController) {
+    navigation(
+        startDestination = "run_overview",
+        route = "run"
+    ) {
+        composable("run_overview") {
+            Text(text = "Run Overview!")
         }
     }
 }
